@@ -1,0 +1,251 @@
+/* General Styling for the Courses Page */
+.courses {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f7fa; /* Light background for the entire page */
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif; /* Consistent font for the page */
+}
+
+.courses h2 {
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #54aacc; /* Highlight on focus */
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #54aacc;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #3e8ea4;
+}
+
+/* Course List Styling */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Increased gap between cards */
+}
+
+/* Individual Course Card Styling */
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+
+.course-card h3 {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.course-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Hover Effects for Cards */
+.course-card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px) scale(1.05); /* Slight lift and zoom effect */
+    background-color: #eaf3f9; /* Subtle background change on hover */
+}
+
+.course-card:hover h3 {
+    color: #54aacc; /* Change title color on hover */
+}
+
+.course-card:hover p {
+    color: #555; /* Darker description text */
+}
+
+/* Read More Link in Cards */
+.course-card .read-more {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: #54aacc;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.course-card .read-more:hover {
+    background-color: #3e8ea4;
+}
+
+/* Assignment Form Styling */
+.course-card form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-card input[type="file"] {
+    font-size: 0.9rem;
+}
+
+.course-card button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #54aacc;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-card button[type="submit"]:hover {
+    background-color: #3e8ea4;
+}
+
+/* Admin Assignments Section */
+.assignments {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.assignments h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.assignment-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-card p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.assignment-card input[type="number"] {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    width: 60px;
+}
+
+.assignment-card input[type="number"]:focus {
+    border-color: #54aacc;
+    outline: none;
+}
+
+.assignment-card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #54aacc;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.assignment-card button:hover {
+    background-color: #3e8ea4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-card {
+        width: 260px; /* Adjusted width */
+        padding: 15px;
+    }
+
+    .courses h2 {
+        font-size: 1.8rem;
+    }
+
+    .course-list {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-card {
+        width: 100%; /* Full-width cards */
+    }
+
+    .courses {
+        padding: 20px;
+    }
+
+    .courses h2 {
+        font-size: 1.5rem;
+    }
+
+    .course-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .course-card p {
+        font-size: 0.85rem;
+    }
+
+    .course-card .read-more {
+        font-size: 12px;
+    }
+}
