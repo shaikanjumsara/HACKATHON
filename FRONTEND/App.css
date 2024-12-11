@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Sleek and modern font */
+  background: linear-gradient(to bottom, #8dd0e0, #ffffff); /* Soft gradient for the whole app */
+  overflow-x: hidden;
+}
+
+/* Logo styling */
+.App-logo {
+  position: absolute; /* Position it in the top-left corner */
+  top: 20px; /* Adjust spacing from top */
+  left: 20px; /* Adjust spacing from left */
+  height: 20vmin; /* Smaller logo for subtle branding */
+  pointer-events: none;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header styling */
+.App-header {
+  background: linear-gradient(to right, #6dd5ed, #2193b0); /* Cool blue gradient */
+  min-height: 2px; /* Reduced height for a smaller fit */
+  display: flex;
+  flex-direction: column; /* For vertical alignment of title and navigation */
+  align-items: center;
+  justify-content: center;
+  font-size: 10px; /* Match the logo size or adjust as needed */
+  color: #3943c3;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  border-bottom: 4px solid #4a90e2;
+  padding: 5px; /* Reduced padding for better fit */
+  font-family: 'Montserrat', sans-serif; /* Bold heading font */
+  font-weight: bold; /* Ensures the font is bold */
+}
+
+
+
+.App-header h1 {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
+  font-size: calc(16px + 1.5vmin); /* Balanced font size */
+}
+
+/* Navigation menu */
+.App-nav {
+  margin-top: 15px; /* Add spacing below the title */
+}
+
+.App-nav a {
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0 15px; /* Spacing between navigation links */
+  text-decoration: none;
+  font-size: calc(12px + 1vmin);
+  transition: color 0.3s ease-in-out;
+}
+
+.App-nav a:hover {
+  color: #fbc2eb;
+  text-decoration: underline;
+}
+
+/* Body styling */
+.App-body {
+  background-image: url('https://source.unsplash.com/1600x900/?abstract,colors'); /* Subtle abstract background */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 75vh;
+  padding: 30px 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.App-body h2 {
+  font-size: calc(16px + 2vmin);
+  margin: 15px 0;
+  color: #f06292; /* Light red for contrast */
+  font-weight: bold;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.App-body p {
+  line-height: 1.6;
+  color: #e7e7e7;
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: calc(12px + 1vmin);
+}
+
+/* Link styling */
+.App-link {
+  color: #6dd5ed;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(to right, #ff6b6b, #fbc2eb); /* Light red to soft pink gradient */
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.App-link:hover {
+  color: #ffffff;
+  background: linear-gradient(to right, #fbc2eb, #ff6b6b);
+  text-decoration: underline;
+}
+
+/* Button styling */
+button {
+  background: linear-gradient(to right, #4a90e2, #6dd5ed); /* Cool blue button gradient */
+  color: white;
+  font-size: calc(12px + 1vmin);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+button:hover {
+  background: linear-gradient(to right, #6dd5ed, #4a90e2);
+  transform: scale(1.05);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+  background: linear-gradient(to right, #fbc2eb, #6dd5ed); /* Soft pink and blue gradient */
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 4px solid #6dd5ed;
+}
+
+footer a {
+  color: #6dd5ed;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #f06292;
+}
+
+/* Animations and Decorative Elements */
+.glow {
+  text-shadow: 0 0 6px #4a90e2, 0 0 12px #6dd5ed, 0 0 18px #2193b0; /* Cool glowing effect */
+}
+
+
